@@ -1,0 +1,42 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.container{
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "d  h h h h h"
+    "d  c c c c c"
+    "d  c c c c c"
+    "d  c c c c c"
+    "d  c c c c c"
+    "d  c c c c c";
+}
+.dashboard{
+    background-color: #0ea5e9;
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dashboard >*{
+    margin-left:15px;
+}
+.dashboard-title{
+    margin-top: 10px;
+}
+.home{
+    margin-top: 20px;
+}
+.settings{
+    margin-top: 45px;
+}
+.header{
+    background-color: yellow;
+    grid-area: h;
+}
+.content{
+    background-color: antiquewhite;
+    grid-area: c;
+}
